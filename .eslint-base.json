@@ -1,0 +1,82 @@
+{
+  "extends": "eslint:recommended",
+  "rules": {
+    "no-console": "off",
+    "no-undef": ["error", {
+      "typeof": false
+    }],
+    "no-unused-vars": ["warn", {
+      "vars": "all",
+      "args": "after-used",
+      "ignoreRestSiblings": false
+    }],
+    "semi": ["warn", "always"],
+    "no-extra-semi": "warn",
+    "valid-jsdoc": ["warn", {
+      "prefer": {
+        "arg": "param",
+        "argument": "param",
+        "class": "constructor",
+        "return": "returns",
+        "virtual": "abstract"
+      },
+      "preferType": {
+        "Boolean": "boolean",
+        "Number": "number",
+        "String": "string",
+        "Object": "object"
+      },
+      "requireReturn": false,
+      "requireReturnType": true,
+      "requireParamDescription": false,
+      "requireReturnDescription": false
+    }],
+    "no-unused-labels": "error",
+    "no-useless-call": "warn",
+    "no-catch-shadow": "warn",
+    "no-shadow-restricted-names": "error",
+    "no-invalid-regexp": "error",
+    "no-irregular-whitespace": "error",
+    "no-obj-calls": "error",
+    "no-func-assign": "error",
+    "no-inner-declarations": ["error", "both"],
+    "no-label-var": "error",
+    "no-shadow": ["warn", {
+      "builtinGlobals": false,
+      "hoist": "functions",
+      "allow": [
+        "i",
+        "length"
+      ]
+    }],
+    "getter-return": "error",
+    "no-compare-neg-zero": "error",
+    "no-use-before-define": ["warn", "nofunc"],
+    "no-mixed-operators": ["warn"],
+    "indent": ["warn", 4, {
+      "SwitchCase": 1,
+      "FunctionDeclaration": {"parameters": "first"},
+      "FunctionExpression": {"parameters": "first"},
+      "CallExpression": {"arguments": "off"},
+      "ArrayExpression": 1,
+      "ObjectExpression": 1,
+      "ignoredNodes": ["ConditionalExpression"]
+    }],
+    "linebreak-style": ["warn", "unix"],
+    "brace-style": ["warn", "1tbs", {"allowSingleLine": true}],
+    "camelcase": ["warn", {"properties": "always"}],
+    "comma-dangle": "warn",
+    "comma-spacing": ["warn", {"after": true}],
+    "comma-style": ["warn", "last"],
+    "quotes": ["warn", "single", {
+      "avoidEscape": true,
+      "allowTemplateLiterals": true
+    }],
+    "keyword-spacing": ["warn", {
+      "before": true,
+      "after": true
+    }],
+    "max-len": ["off", {"code": 80}],
+    "line-comment-position": ["warn", {"position": "above"}]
+  }
+}
