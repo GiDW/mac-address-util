@@ -1,6 +1,6 @@
 {
   "name": "@gidw/mac-address-util",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Utility functions for working with MAC addresses",
   "author": "Gilles De Waele",
   "keywords": [
