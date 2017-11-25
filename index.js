@@ -10,9 +10,10 @@ module.exports = {
      * Convert a numeric MAC address to a standard MAC address notation
      *
      * @param {number} macNum
+     * @param {boolean} [debug]
      * @returns {string}
      */
-    convertToMac: function convertToMac (macNum) {
+    convertToMac: function convertToMac (macNum, debug) {
 
         var macStr, macStrLength, macStrLengthDiff, completeMacStr;
         var i, padding;
@@ -41,7 +42,10 @@ module.exports = {
 
             } else {
 
-                console.warn('convertToMac - Invalid MAC number length');
+                if (debug) {
+
+                    console.warn('convertToMac - Invalid MAC number length');
+                }
             }
 
             if (typeof completeMacStr === 'string' &&
@@ -57,15 +61,21 @@ module.exports = {
 
             } else {
 
-                console.warn(
-                    'convertToMac - Invalid complete MAC string',
-                    completeMacStr
-                );
+                if (debug) {
+
+                    console.warn(
+                        'convertToMac - Invalid complete MAC string',
+                        completeMacStr
+                    );
+                }
             }
 
         } else {
 
-            console.warn('convertToMac - Invalid MAC number');
+            if (debug) {
+
+                console.warn('convertToMac - Invalid MAC number');
+            }
         }
 
         return result;
@@ -75,9 +85,10 @@ module.exports = {
      * Convert a MAC address to a number
      *
      * @param {string} macStr
+     * @param {boolean} [debug]
      * @returns {number}
      */
-    convertToNumber: function convertToNumber (macStr) {
+    convertToNumber: function convertToNumber (macStr, debug) {
 
         var splits, length, macHexStr;
         var result = 0;
@@ -96,10 +107,13 @@ module.exports = {
 
             } else {
 
-                console.warn(
-                    'convertToNumber - Invalid MAC address' +
-                    ' - Unknown separator'
-                );
+                if (debug) {
+
+                    console.warn(
+                        'convertToNumber - Invalid MAC address' +
+                        ' - Unknown separator'
+                    );
+                }
             }
 
             if (separator) {
@@ -114,17 +128,23 @@ module.exports = {
 
                 } else {
 
-                    console.warn(
-                        'convertToNumber - Invalid MAC address' +
-                        ' - Invalid split',
-                        splits
-                    );
+                    if (debug) {
+
+                        console.warn(
+                            'convertToNumber - Invalid MAC address' +
+                            ' - Invalid split',
+                            splits
+                        );
+                    }
                 }
             }
 
         } else {
 
-            console.warn('convertToNumber - Invalid MAC address');
+            if (debug) {
+
+                console.warn('convertToNumber - Invalid MAC address');
+            }
         }
 
         return result;
