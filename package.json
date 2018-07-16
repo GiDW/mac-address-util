@@ -12,16 +12,12 @@
   "license": "MIT",
   "main": "index.js",
   "types": "index.d.ts",
-  "dependencies": {},
   "devDependencies": {
-    "eslint": "4.11.0"
+    "standard": "11.0.1"
   },
   "repository": "github:GiDW/mac-address-util.git",
   "bugs": {
     "url": "https://github.com/GiDW/mac-address-util/issues",
     "email": "de.waele.gilles@gmail.com"
-  },
-  "scripts": {
-    "lint": "eslint index.js"
   }
 }
