@@ -3,6 +3,7 @@
 Utility functions to transform a MAC address to string representation and number representation.
 
 [![NPM version](https://img.shields.io/npm/v/@gidw/mac-address-util.svg)](https://www.npmjs.com/package/@gidw/mac-address-util)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![License](https://img.shields.io/github/license/GiDW/mac-address-util.svg)](https://github.com/GiDW/mac-address-util/blob/master/LICENSE)
 
 ## Usage
