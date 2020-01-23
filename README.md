@@ -19,5 +19,5 @@ macAddressUtil.convertToMac(76310993685999)
 // Returns 150046399349811
 macAddressUtil.convertToNumber('88:77:66:55:44:33')
 // Returns 76310993685999
-macAddressUtil.convertToNumber('45:67:89:AB:cd:Ef')
+macAddressUtil.convertToNumber('45-67-89-AB-cd-Ef')
 ```
