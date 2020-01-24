@@ -15,9 +15,13 @@ var macAddressUtil = require('@gidw/mac-address-util')
 macAddressUtil.convertToMac(150046399349811)
 // Returns "45:67:89:ab:cd:ef"
 macAddressUtil.convertToMac(76310993685999)
+// Returns ""
+macAddressUtil.convertToMac(-1)
 
 // Returns 150046399349811
 macAddressUtil.convertToNumber('88:77:66:55:44:33')
 // Returns 76310993685999
 macAddressUtil.convertToNumber('45-67-89-AB-cd-Ef')
+// Returns 0
+macAddressUtil.convertToNumber('abc')
 ```
