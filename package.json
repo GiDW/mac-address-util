@@ -13,11 +13,15 @@
   "main": "index.js",
   "types": "index.d.ts",
   "devDependencies": {
+    "mocha": "7.0.0",
     "standard": "14.3.1"
   },
   "repository": "github:GiDW/mac-address-util.git",
   "bugs": {
     "url": "https://github.com/GiDW/mac-address-util/issues",
     "email": "de.waele.gilles@gmail.com"
+  },
+  "scripts": {
+    "test": "mocha"
   }
 }
