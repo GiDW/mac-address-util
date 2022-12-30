@@ -13,7 +13,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "devDependencies": {
-    "mocha": "8.1.3",
+    "mocha": "8.4.0",
     "standard": "14.3.4"
   },
   "repository": "github:GiDW/mac-address-util.git",
