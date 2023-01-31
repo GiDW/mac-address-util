@@ -1,3 +1,2 @@
-
-export function convertToMac (macNum: number): string;
-export function convertToNumber (macStr: string): number;
+export function convertToMac(macNum: number): string;
+export function convertToNumber(macStr: string): number;
